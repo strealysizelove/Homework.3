@@ -5,7 +5,7 @@ Created on Sun Apr 10 21:40:17 2022
 @author: Strealy Sizelove
 """
 
-# STK AAPL
+# STK LULU
 # Import requests to retrive Web Urls example HTML. TXT 
 import requests
 
@@ -19,7 +19,7 @@ import re
 import pandas as pd
 
 # Get the HTML data from the 2018 10-K from Apple
-r = requests.get('https://www.sec.gov/Archives/edgar/data/320193/000032019318000145/0000320193-18-000145.txt')
+r = requests.get('https://www.sec.gov/Archives/edgar/data/0001397187/000139718718000013/lulu-20180128x10k.txt')
 raw_10k = r.text
 
 print(raw_10k[0:1300])
